@@ -15,6 +15,7 @@
   justify-content: center;
   gap: 0 30px;
   background: rgba(39, 43, 44, 0.4);
+  border-radius: 10px;
 }
 .nav a {
   font-family: "FrakturOmnv1";

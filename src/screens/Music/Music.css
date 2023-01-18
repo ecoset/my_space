@@ -6,7 +6,7 @@
   align-items: center;
   gap: 0 20px;
   background-color: #21252D;
-  min-height: 80px;
+  height: 80px;
 }
 .music__logo-link {
   margin-left: 96px;
