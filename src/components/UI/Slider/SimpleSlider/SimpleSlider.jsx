@@ -9,7 +9,7 @@ function SimpleSlider({ name, settings, array, className, dir }) {
     const setSettings = {
         ...settings,
     };
-    // array.sort((a, b) => a[array.id] < b[array.id] ? 1 : -1)
+    
     return (
         <div className='slide'>
             <h3

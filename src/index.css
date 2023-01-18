@@ -24,14 +24,14 @@ body {
   background-color: #252525;
   text-decoration: none;
   color: #fff;
-  background-image: linear-gradient(to right,
+  /* background-image: linear-gradient(to right,
       rgb(0, 0, 0) 0%,
       rgba(0, 0, 0, 0.921) 51%,
       rgba(0, 0, 0, 0.303) 100%),
-    url("../public/img/background.jpg");
-  background-size: cover;
+    url("../public/img/background.jpg"); */
+  /* background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-  min-height: 100vh;
+  background-position: center; */
+  /* min-height: 100vh; */
 }
 
