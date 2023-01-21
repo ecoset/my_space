@@ -1,45 +1,25 @@
 import React from 'react';
 import Slider from 'react-slick';
-import { Link } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './SimpleSlider.css';
 
-function SimpleSlider({ name, settings, array, className, dir }) {
-    const setSettings = {
-        ...settings,
+function SimpleSlider() {
+    const settings = {
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 500,
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        adaptiveHeight: true,
+        variableWidth: true,
     };
-    
+
     return (
-        <div className='slide'>
-            <h3
-                style={{
-                    textAlign: 'left',
-                    marginBottom: '16px',
-                    marginTop: '32px',
-                }}
-            >
-                {name}
-            </h3>
-            <Slider {...setSettings} className={className}>
-                {array.map((slide) => {
-                    return (
-                        <div key={slide.id}>
-                            <Link to={slide.slug}>
-                                <img
-                                    src={
-                                        process.env.PUBLIC_URL +
-                                        `${dir}${slide.cover}`
-                                    }
-                                    alt=""
-                                />
-                            </Link>
-                                <p className="slide__text" style={{ marginTop: '' }}>
-                                    {slide.album}
-                                </p>
-                        </div>
-                    );
-                })}
+        <div className="slide">
+            <Slider {...settings}>
+                {children}
             </Slider>
         </div>
     );
