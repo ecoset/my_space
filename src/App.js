@@ -5,11 +5,11 @@ import Gallery from './screens/Gallery/Gallery';
 import Books from './screens/Books/Books';
 import Favorites from './screens/Favorites/Favorites';
 import Contacts from './screens/Contacts/Contacts';
-import Music from './screens/Music/Music';
 import Header from './components/layout/Header';
 import NotFound from './screens/NotFound/NotFound';
-import './App.css';
 import MusicSingle from './components/Music/Single/MusicSingle';
+import Music from './components/Music/Music';
+import './App.css';
 
 function App() {
     return (

@@ -1,4 +1,4 @@
-import { Link } from 'react-bootstrap/lib/Navbar';
+import { Link } from "react-router-dom";
 
 const ScreensMusicNew = ({ array }) => {
     return (
@@ -9,7 +9,7 @@ const ScreensMusicNew = ({ array }) => {
                     alt="cover"
                     className="ScreenMusicNew__img"
                 />
-                <h3>{array.title}</h3>
+                <h3>{array.album}</h3>
             </Link>
         </div>
     );

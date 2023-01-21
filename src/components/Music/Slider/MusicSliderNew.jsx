@@ -1,11 +1,14 @@
-import ScreensMusicList from '../../../screens/Music/List/ScreensMusicList';
 import SimpleSlider from '../../UI/Slider/SimpleSlider/SimpleSlider';
+import ScreensMusicList from '../../../screens/Music/List/ScreensMusicList';
 
 const MusicSliderNew = () => {
     return (
-        <SimpleSlider>
-            <ScreensMusicList />
-        </SimpleSlider>
+        <>
+            <h3>Новые Релизы</h3>
+            <SimpleSlider>
+                <ScreensMusicList />
+            </SimpleSlider>
+        </>
     );
 };
 

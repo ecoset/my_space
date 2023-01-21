@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import './SimpleSlider.css';
 
-function SimpleSlider() {
+function SimpleSlider({ children }) {
     const settings = {
         dots: false,
         arrows: true,
@@ -17,7 +17,7 @@ function SimpleSlider() {
     };
 
     return (
-        <div className="slide">
+        <div className="SimpleSlider">
             <Slider {...settings}>
                 {children}
             </Slider>
