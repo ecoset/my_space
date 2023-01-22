@@ -2,7 +2,7 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import './SimpleSlider.css';
+import './SimpleSlider.css'
 
 function SimpleSlider({ children }) {
     const settings = {
@@ -17,11 +17,11 @@ function SimpleSlider({ children }) {
     };
 
     return (
-        <div className="SimpleSlider">
+        <>
             <Slider {...settings}>
                 {children}
             </Slider>
-        </div>
+        </>
     );
 }
 

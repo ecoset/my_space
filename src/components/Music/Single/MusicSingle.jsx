@@ -1,7 +1,6 @@
 import { useParams } from 'react-router-dom';
 import music from '../../../data/music/music';
 import ContainerBig from '../../../screens/Conteiner/Big/ContainerBig';
-import './MusicSingle.css';
 
 const MusicSingle = () => {
     const params = useParams();

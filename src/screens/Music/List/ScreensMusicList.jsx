@@ -3,13 +3,13 @@ import ScreensMusicNew from '../New/ScreensMusicNew';
 
 const ScreensMusicList = () => {
     return (
-        <div>
+        <>
             {music.map(array => {
                 return (
                     <ScreensMusicNew array={array} />
                 )
             })}
-        </div>
+        </>
     );
 };
 
