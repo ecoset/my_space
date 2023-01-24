@@ -1,0 +1,107 @@
+.SliderItem {
+    .slick {
+        &-slider {
+            position: relative;
+
+            // ? Слайдер запущен
+            &.slick-initialized {}
+
+            // ? Слайдер с точкми
+            &.slick-dotted {}
+        }
+
+        &-list {
+            overflow: hidden;
+        }
+
+        &-track {
+            display: flex;
+            align-items: flex-start;
+            gap: 0 20px;
+        }
+
+        //  Слайд  <<<<<<<<<<<<<<<<<<<
+        &-slide {
+
+            // ? Слайд активный
+            &.slick-active {}
+
+            // ? Слайд основной
+            &.slick-current {}
+
+            // ? Слайд по центру
+            &.slick-center {}
+
+            // ? Клонированный слайд
+            &.slick.cloned {}
+        }
+
+        //  Стрелка  <<<<<<<<<<<<<<<<<<<
+        &-arrow {
+            z-index: 10;
+            top: 64px;
+            font-size: 0;
+            width: 40px;
+            height: 40px;
+            border: none;
+
+            //  Стрелка влево
+            &.slick-prev {
+                position: absolute;
+                left: -20px;
+                background: url('../../../../public/img/slider/arrows/arrow-left.svg') 0 0 no-repeat;
+            }
+
+            //  Стрелка вправо
+            &.slick-next {
+                position: absolute;
+                right: -20px;
+                background: url('../../../../public/img/slider/arrows/arrow-right.svg') 0 0 no-repeat;
+            }
+            //  Стрелка не активна
+            &.slick-disabled {
+                opacity: 0.1;
+            }
+        }
+
+        //  Точки  <<<<<<<<<<<<<<<<<<<
+        &-dots {
+
+            //  Точка
+            li {
+
+                //  Активная точка
+                &.slick-active {}
+
+                //  Элемент точки
+                button {}
+            }
+        }
+    }
+
+    &__title {
+        margin-top: 32px;
+        margin-bottom: 16px;
+        // font-family: 'Roboto', sans-serif;
+        // font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 32px;
+        text-align: left;
+        color: inherit;
+    }
+
+    &__img {
+        width: 196px;
+        height: 196px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        border-radius: 12px;
+    }
+
+    &__subtitle {
+        text-align: left;
+        margin-bottom: 7px;
+    }
+}

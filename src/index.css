@@ -1,12 +1,14 @@
 @font-face {
   font-family: "GothicRus";
-  src: url(../public/font/GothicRus.ttf);
+  src: url('../public/font/GothicRus.ttf');
 }
 
 @font-face {
   font-family: "FrakturOmnv1";
-  src: url(../public/font/FrakturOmnv1.otf);
+  src: url('../public/font/FrakturOmnv1.otf');
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
 html {
   box-sizing: border-box;
@@ -22,16 +24,6 @@ html {
 
 body {
   background-color: #252525;
-  text-decoration: none;
-  color: #fff;
-  /* background-image: linear-gradient(to right,
-      rgb(0, 0, 0) 0%,
-      rgba(0, 0, 0, 0.921) 51%,
-      rgba(0, 0, 0, 0.303) 100%),
-    url("../public/img/background.jpg"); */
-  /* background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center; */
-  /* min-height: 100vh; */
-}
+  color: #F7F5F5;
 
+}
