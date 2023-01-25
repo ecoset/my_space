@@ -3,8 +3,18 @@
         .SliderInner__subtitle {
             text-align: center;
         }
+
         .SliderInner__img {
             border-radius: 50%;
+        }
+    }
+
+    &__header {
+        display: flex;
+        align-items: center;
+
+        .SearchBar__logo {
+            
         }
     }
 }

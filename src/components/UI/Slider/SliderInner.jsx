@@ -2,11 +2,12 @@ import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
 import './SliderInner.scss';
 
-const SliderInner = ({ className, nameSlider, settings, array }) => {
-    
+const SliderInner = ({ className, nameSlider, settings, array, link }) => {
     return (
         <div className={`SliderInner ${className}`}>
-            <h2 className='SliderInner__title'>{nameSlider}</h2>
+            <Link to={link}>
+                <h2 className="SliderInner__title">{nameSlider}</h2>
+            </Link>
             <Slider {...settings}>
                 {array?.map((item) => {
                     return (
@@ -22,7 +23,9 @@ const SliderInner = ({ className, nameSlider, settings, array }) => {
                                     srcset=""
                                 />
                             </Link>
-                            <p className='SliderInner__subtitle'>{item?.album}</p>
+                            <p className="SliderInner__subtitle">
+                                {item?.album}
+                            </p>
                         </div>
                     );
                 })}

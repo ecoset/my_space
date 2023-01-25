@@ -1,4 +1,5 @@
 import { NavLink } from 'react-router-dom';
+import SearchBar from '../UI/Search/Bar/SearchBar';
 import './Menu.scss';
 
 const Menu = () => {
@@ -6,7 +7,7 @@ const Menu = () => {
         <nav className="Menu">
             <ul className='Menu__list'>
                 <li className='Menu__item'>
-                    <NavLink className="Menu__link" to="/" end>
+                    <NavLink className="Menu__link" to="." end>
                         Home
                     </NavLink>
                 </li>
