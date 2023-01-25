@@ -8,21 +8,21 @@ const SliderInner = ({ className, nameSlider, settings, array }) => {
         <div className={`SliderInner ${className}`}>
             <h2 className='SliderInner__title'>{nameSlider}</h2>
             <Slider {...settings}>
-                {array.map((item) => {
+                {array?.map((item) => {
                     return (
-                        <div key={item.id}>
-                            <Link to={item.slug}>
+                        <div key={item?.id}>
+                            <Link to={item?.slug}>
                                 <img
                                     className="SliderInner__img"
                                     src={
                                         process.env.PUBLIC_URL +
-                                        `/img/music/cover/${item.title}/${item.cover}`
+                                        `/img/music/cover/${item?.title}/${item.cover}`
                                     }
                                     alt="Cover"
                                     srcset=""
                                 />
                             </Link>
-                            <p className='SliderInner__subtitle'>{item.album}</p>
+                            <p className='SliderInner__subtitle'>{item?.album}</p>
                         </div>
                     );
                 })}

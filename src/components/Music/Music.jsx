@@ -17,8 +17,24 @@ const Music = () => {
             <main className="Music">
                 <section>
                     <SliderInner
-                        className={"Music__slider-new"}
+                        className={"Music__slider--new"}
                         nameSlider={'Новые Релизы'}
+                        settings={settings}
+                        array={music}
+                    />
+                </section>
+                <section>
+                    <SliderInner
+                        className={"Music__slider--va"}
+                        nameSlider={'Сборники'}
+                        settings={settings}
+                        array={music}
+                    />
+                </section>
+                <section>
+                    <SliderInner
+                        className={"Music__slider--artists"}
+                        nameSlider={'Артисты'}
                         settings={settings}
                         array={music}
                     />

@@ -5,13 +5,13 @@ const Menu = () => {
     return (
         <nav className="Menu">
             <ul className='Menu__list'>
-                <li>
-                    <NavLink className="Menu__item" to="/" end>
+                <li className='Menu__item'>
+                    <NavLink className="Menu__link" to="/" end>
                         Home
                     </NavLink>
                 </li>
                 <li>
-                    <NavLink className="Menu__item" to="music">Music</NavLink>
+                    <NavLink className="Menu__link" to="music">Music</NavLink>
                 </li>
             </ul>
         </nav>

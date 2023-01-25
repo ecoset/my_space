@@ -1,14 +1,8 @@
 @font-face {
   font-family: "GothicRus";
-  src: url('../public/font/GothicRus.ttf');
+  src: url(../public/font/GothicRus_Medium.ttf);
 }
 
-@font-face {
-  font-family: "FrakturOmnv1";
-  src: url('../public/font/FrakturOmnv1.otf');
-}
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
 
 html {
   box-sizing: border-box;
