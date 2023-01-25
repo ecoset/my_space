@@ -12,9 +12,11 @@
     &__header {
         display: flex;
         align-items: center;
+        gap: 30px;
+        padding: 10px 30px;
+    }
 
         .SearchBar__logo {
             
         }
     }
-}

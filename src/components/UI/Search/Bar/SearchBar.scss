@@ -1,0 +1,22 @@
+.SearchBar {
+    &__button {
+        background-color: #3D464D;
+        width: 48px;
+        height: 48px;
+        border-radius: 0 6px 6px 0;
+    }
+
+    &__input {
+        width: 550px;
+        height: 48px;
+        border-radius: 6px 0 0 6px;
+        background-color: #151A1F;
+        border: 1px solid #3D464D;
+        padding: 13.5px 17px;
+
+        &-inner {
+            display: flex;
+            align-items: center;
+        }
+    }
+}
