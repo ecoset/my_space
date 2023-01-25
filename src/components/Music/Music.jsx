@@ -1,7 +1,7 @@
 import ContainerBig from '../../screen/Containers/ContainerBig';
-import SliderItem from '../../screen/Music/New/SliderItem';
+import SliderInner from '../UI/Slider/SliderInner';
 import music from '../../screen/Music/data/music';
-import './Music.css';
+import './Music.scss';
 
 const Music = () => {
     const settings = {
@@ -16,7 +16,7 @@ const Music = () => {
         <ContainerBig>
             <main className="Music">
                 <section>
-                    <SliderItem
+                    <SliderInner
                         className={"Music__slider-new"}
                         nameSlider={'Новые Релизы'}
                         settings={settings}

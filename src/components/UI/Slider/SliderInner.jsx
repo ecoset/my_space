@@ -1,19 +1,19 @@
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
-import './SliderItem.css';
+import './SliderInner.scss';
 
-const SliderItem = ({ className, nameSlider, settings, array }) => {
+const SliderInner = ({ className, nameSlider, settings, array }) => {
     
     return (
-        <div className={`SliderItem ${className}`}>
-            <h2 className='SliderItem__title'>{nameSlider}</h2>
+        <div className={`SliderInner ${className}`}>
+            <h2 className='SliderInner__title'>{nameSlider}</h2>
             <Slider {...settings}>
                 {array.map((item) => {
                     return (
                         <div key={item.id}>
                             <Link to={item.slug}>
                                 <img
-                                    className="SliderItem__img"
+                                    className="SliderInner__img"
                                     src={
                                         process.env.PUBLIC_URL +
                                         `/img/music/cover/${item.title}/${item.cover}`
@@ -22,7 +22,7 @@ const SliderItem = ({ className, nameSlider, settings, array }) => {
                                     srcset=""
                                 />
                             </Link>
-                            <p className='SliderItem__subtitle'>{item.album}</p>
+                            <p className='SliderInner__subtitle'>{item.album}</p>
                         </div>
                     );
                 })}
@@ -31,4 +31,4 @@ const SliderItem = ({ className, nameSlider, settings, array }) => {
     );
 };
 
-export default SliderItem;
+export default SliderInner;

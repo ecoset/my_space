@@ -1,13 +1,19 @@
 import { NavLink } from 'react-router-dom';
-import './Menu.css'
+import './Menu.scss';
 
 const Menu = () => {
     return (
         <nav className="Menu">
-            <NavLink to="/" end>
-                Home
-            </NavLink>
-            <NavLink to="music">Music</NavLink>
+            <ul className='Menu__list'>
+                <li>
+                    <NavLink className="Menu__item" to="/" end>
+                        Home
+                    </NavLink>
+                </li>
+                <li>
+                    <NavLink className="Menu__item" to="music">Music</NavLink>
+                </li>
+            </ul>
         </nav>
     );
 };

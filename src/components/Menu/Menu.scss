@@ -1,17 +1,33 @@
+@font-face {
+    font-family: "GothicRus";
+    src: url('../../../public/font/GothicRus.ttf');
+}
+
+@font-face {
+    font-family: "FrakturOmnv1";
+    src: url('../../../public/font/FrakturOmnv1.otf');
+}
+
 .Menu {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 0 30px;
-    background: rgba(39, 43, 44);
-    border-radius: 10px;
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0 30px;
+        background: rgba(39, 43, 44);
+        border-radius: 10px;
+        padding: 15px;
+    }
+    &__item {
+        font-family: "GothicRus";
+    }
 
     a {
-        font-family: "FrakturOmnv1";
         font-size: 40px;
         text-decoration: inherit;
         color: #8e949c;
         padding: 20px 0;
+
 
         &:hover {
             color: rgb(167, 1, 1);
