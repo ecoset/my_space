@@ -1,6 +1,10 @@
-const Area = () => {
+const Area = ({array}) => {
     return <div className="Area">
-        
+        {array.map(item => {
+            return (
+                <></>
+            )
+        })}
     </div>;
 };
 
