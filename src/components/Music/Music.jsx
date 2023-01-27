@@ -21,7 +21,7 @@ const Music = () => {
                         nameSlider={'Новые Релизы'}
                         settings={settings}
                         array={music}
-                        link="music/new"
+                        link="new"
                     />
                 </section>
                 <section>
@@ -30,7 +30,7 @@ const Music = () => {
                         nameSlider={'Сборники'}
                         settings={settings}
                         array={music}
-                        link="music/va"
+                        link="va"
                     />
                 </section>
                 <section>
@@ -39,7 +39,7 @@ const Music = () => {
                         nameSlider={'Артисты'}
                         settings={settings}
                         array={music}
-                        link="music/artists"
+                        link="artists"
                     />
                 </section>
             </main>
