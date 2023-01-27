@@ -2,7 +2,6 @@ import ContainerBig from '../../screen/Containers/ContainerBig';
 import SliderInner from '../UI/Slider/SliderInner';
 import music from '../../screen/Music/data/music';
 import './Music.scss';
-import SearchBar from '../UI/Search/Bar/SearchBar';
 
 const Music = () => {
     const settings = {
@@ -16,7 +15,6 @@ const Music = () => {
     return (
         <ContainerBig>
             <main className="Music">
-            <SearchBar className="Music__header" linkLogo={"music/logo/music-logo.svg"} />
                 <section>
                     <SliderInner
                         className={"Music__slider--new"}
