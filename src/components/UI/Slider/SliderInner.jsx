@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import Slider from 'react-slick';
+import ScreenMusicCover from '../../../screen/Music/Cover/ScreenMusicCover';
 import './SliderInner.scss';
 
 const SliderInner = ({ className, nameSlider, settings, array, link }) => {
@@ -12,20 +13,14 @@ const SliderInner = ({ className, nameSlider, settings, array, link }) => {
                 {array?.map((item) => {
                     return (
                         <div key={item?.id}>
-                            <Link to={item?.slug}>
-                                <img
-                                    className="SliderInner__img"
-                                    src={
-                                        process.env.PUBLIC_URL +
-                                        `/img/music/cover/${item?.title}/${item.cover}`
-                                    }
-                                    alt="Cover"
-                                    srcset=""
-                                />
-                            </Link>
-                            <p className="SliderInner__subtitle">
-                                {item?.album}
-                            </p>
+                            <ScreenMusicCover
+                                slug={item?.slug}
+                                title={item?.title}
+                                cover={item?.cover}
+                                album={item?.album}
+                                classImg="SliderInner__img"
+                                classText="SliderInner__subtitle"
+                            />
                         </div>
                     );
                 })}
