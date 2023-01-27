@@ -1,5 +1,15 @@
+import Area from '../../UI/Area/Area';
+import music from '../../../screen/Music/data/music';
+import ContainerMin from '../../../screen/Containers/ContainerMin';
+
 const MusicArtists = () => {
-    return <div>Music Artists</div>;
+    return (
+        <div className="MusicArtists">
+            <ContainerMin>
+                <Area array={music} className={"MusicArtists__area"} />
+            </ContainerMin>
+        </div>
+    );
 };
 
 export default MusicArtists;

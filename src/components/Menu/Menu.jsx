@@ -1,5 +1,4 @@
 import { NavLink } from 'react-router-dom';
-import SearchBar from '../UI/Search/Bar/SearchBar';
 import './Menu.scss';
 
 const Menu = () => {
