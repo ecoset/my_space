@@ -2,5 +2,11 @@
     display: flex;
     flex-wrap: wrap;
     gap: 24px 24px;
-    align-items: flex-start;
+    // align-items: flex-start;
+    padding: 20px;
+    &-title {
+        text-align: left;
+        padding-left: 20px;
+        padding-top: 39px;
+    }
 }
