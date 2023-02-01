@@ -1,14 +1,11 @@
 import { Outlet } from 'react-router-dom';
-import SearchBar from '../components/UI/Search/Bar/SearchBar';
+import Menu from '../components/Menu/Menu';
+import './SearchLayout.scss';
 
 const SearchLayout = () => {
     return (
         <>
-            <SearchBar
-                className="Music__header"
-                linkLogo={'music/logo/music-logo.svg'}
-            />
-
+            <Menu />
             <Outlet />
         </>
     );

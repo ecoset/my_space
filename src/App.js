@@ -12,18 +12,14 @@ function App() {
     return (
         <BrowserRouter>
             <div className="App">
-              <Routes>
-                <Route path="/" element={<MainLayout />}>
-                  <Route index element={<Home />} />
-                  <Route path="music" element={<SearchLayout />}>
-                    <Route index element={<Music />} />
-                    <Route path="new" element={<MusicNewReleases />} />
-                    <Route path="va" element={<MusicVA />} />
-                    <Route path="artists" element={<MusicArtists />} />
-                  </Route>
-
-                </Route>
-              </Routes>
+                <Routes>
+                    <Route path="/" element={<SearchLayout />}>
+                        <Route index element={<Home />} />
+                        <Route path="music" element={<Music />}>
+                            <Route path="new" element={<Music />} />
+                        </Route>
+                    </Route>
+                </Routes>
             </div>
         </BrowserRouter>
     );

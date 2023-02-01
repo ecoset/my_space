@@ -1,4 +1,5 @@
 .SliderInner {
+
     .slick {
         &-slider {
             position: relative;
@@ -58,6 +59,7 @@
                 right: -20px;
                 background: url('../../../../public/img/slider/arrows/arrow-right.svg') 0 0 no-repeat;
             }
+
             //  Стрелка не активна
             &.slick-disabled {
                 opacity: 0.1;
@@ -80,28 +82,12 @@
     }
 
     &__title {
-        margin-top: 32px;
+        padding-top: 32px;
         margin-bottom: 16px;
-        // font-family: 'Roboto', sans-serif;
-        // font-style: normal;
         font-weight: 500;
         font-size: 24px;
         line-height: 32px;
         text-align: left;
         color: inherit;
     }
-
-    // &__img {
-    //     width: 196px;
-    //     height: 196px;
-    //     background-repeat: no-repeat;
-    //     background-size: cover;
-    //     background-position: center;
-    //     border-radius: 12px;
-    // }
-
-    // &__subtitle {
-    //     text-align: left;
-    //     margin-bottom: 7px;
-    // }
 }

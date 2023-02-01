@@ -6,8 +6,10 @@ import './SliderInner.scss';
 const SliderInner = ({ className, nameSlider, settings, array, link }) => {
     return (
         <div className={`SliderInner ${className}`}>
-            <Link to={link}>
-                <h2 className="SliderInner__title">{nameSlider}</h2>
+            <Link className={`SliderInner__link ${className}__link`} to={link}>
+                <h2 className={`SliderInner__title ${className}__title`}>
+                    {nameSlider}
+                </h2>
             </Link>
             <Slider {...settings}>
                 {array?.map((item) => {
@@ -18,8 +20,8 @@ const SliderInner = ({ className, nameSlider, settings, array, link }) => {
                                 title={item?.title}
                                 cover={item?.cover}
                                 album={item?.album}
-                                classImg="SliderInner__img"
-                                classText="SliderInner__subtitle"
+                                classImg={`SliderInner__img ${className}__img`}
+                                classText={`SliderInner__subtitle ${className}__subtitle`}
                             />
                         </div>
                     );
