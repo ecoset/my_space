@@ -1,10 +1,11 @@
 import AreaSingl from '../../UI/Area/Singl/AreaSingl';
+import music from '../../../screen/Music/data/music';
 
 const MusicSingl = () => {
     return (
-        <div>
-            <AreaSingl />
-        </div>
+        <>
+            <AreaSingl className={`MusicSingl`} arr={music} />
+        </>
     );
 };
 
