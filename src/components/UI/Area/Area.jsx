@@ -13,10 +13,10 @@ const Area = ({ name, array, className }) => {
                             className={`Area__item ${className}__item`}
                         >
                             <ScreenMusicCover
-                                slug={item?.slug}
-                                title={item?.title}
-                                cover={item?.cover}
-                                album={item?.album}
+                                slug={item.slug}
+                                title={item.title}
+                                cover={item.cover}
+                                album={item.album}
                                 classImg={`Area__img ${className}__img`}
                                 classText={`Area__subtitle ${className}__subtitle`}
                             />

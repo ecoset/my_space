@@ -6,7 +6,11 @@ const MusicArtists = () => {
     return (
         <div className="MusicArtists">
             <ContainerMin>
-                <Area array={music} className={"MusicArtists__area"} />
+                <Area
+                    name={'Артисты'}
+                    array={music}
+                    className={'MusicArtists__area'}
+                />
             </ContainerMin>
         </div>
     );
