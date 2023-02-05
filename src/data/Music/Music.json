@@ -1,0 +1,54 @@
+[
+	{
+		"id": 21,
+		"style": "ddd",
+		"artist": "Hocico",
+		"slug": "hocico",
+		"albums": [
+			{
+				"album": "Autoagresion Persistente",
+				"age": 1994,
+				"posted": 357395,
+				"slug": "Autoagresion_Persistente"
+			},
+			{
+				"album": "Odio Bajo El Alma",
+				"age": 1997,
+				"posted": 341011,
+				"slug": "Odio_Bajo_El_Alma"
+			},
+			{
+				"album": "Sangre Hirviente",
+				"age": 1999,
+				"posted": 357395,
+				"slug": "Sangre_Hirviente"
+			},
+			{
+				"album": "Signos De Aberracion",
+				"age": 2022,
+				"posted": 545811,
+				"slug": "Signos_De_Aberracion"
+			}
+		]
+	},
+	{
+		"id": 22,
+		"style": "ddd",
+		"artist": "Unter Null",
+		"slug": "unternull",
+		"albums": [
+			{
+				"album": "Neocide",
+				"age": 2002,
+				"posted": 558099,
+				"slug": "neocide"
+			},
+			{
+				"album": "Moving On",
+				"age": 2010,
+				"posted": 578579,
+				"slug": "movingon"
+			}
+		]
+	}
+]

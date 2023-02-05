@@ -53,10 +53,10 @@ const music = [
     },
 ];
 
-const setMusic = music.map((artist) => {
-    return artist.albums.map((album) => album.album);
-});
+// const setMusic = music.map((artist) => {
+//     return artist.albums.map((album) => album.album);
+// });
 
-// const filMusic = music.filter(item => item.artist === 'Hocico')
-setMusic.sort((a, b) => a[a] > b[0] ? 1 : -1)
-console.log(setMusic)
+// // const filMusic = music.filter(item => item.artist === 'Hocico')
+// setMusic.sort((a, b) => a[a] > b[0] ? 1 : -1)
+// console.log(setMusic)

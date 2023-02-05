@@ -37,7 +37,7 @@
 
 
 // ! Вернуть json в виде массива объектов
-const convertToObject = (jsonFile) => {
+const convertJSONToObject = (jsonFile) => {
     const path = require('path');
     const fs = require('fs');
 
@@ -54,7 +54,7 @@ const convertToJSON = () => {
 }
 
 // ! Вернуть имена папок из директории .../Artists
-const returnDirArtists = () => {
+const returnDirArtists = (folder) => {
     // import area:
     const fs = require('fs');
     const path = require('path');
