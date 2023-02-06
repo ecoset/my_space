@@ -7,4 +7,4 @@ const returnNameFolders = (parentalFolder) => {
     })
 }
 
-export default returnNameFolders;
+module.exports = returnNameFolders;

@@ -8,5 +8,5 @@ const readJSON = (dirJSONFile) => {
     })
 }
 
-export default readJSON;
+module.exports = readJSON;
 
