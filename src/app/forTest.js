@@ -15,28 +15,16 @@ const forTest = () => {
         return folders;
     });
 
+
+
     const arrayObjects = () => {
-        return artistList.map((item) => {
-            let albumItem = fs.readdirSync(
-                `${dirArtists}/${item}/`,
-                (errAlbum, albumItem) => {
-                    if (errAlbum) throw errAlbum;
-                    return { albumItem };
-                }
-            );
-            return {
-                artist: item,
-                albums: [
-                    {
-                        album: [{ name: albumItem, }],
-                    },
-                ],
-            };
-        });
+        artistList.map(item => {
+
+        })
     };
     return arrayObjects();
 };
 
-// console.log(forTest());
+console.log(JSON.stringify(forTest()));
 
-module.exports = forTest;
+// module.exports = forTest;
